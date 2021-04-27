@@ -1,8 +1,29 @@
-# CC:Restitched Patchwork
-# This is a Work In Progress Port
-*it runs and works-ish*
+Description based on https://github.com/SquidDev-CC/CC-Tweaked and https://github.com/Merith-TK/cc-restitched
+# ![CC: ReTweaked](logo.png)
+This is an WIP [fork](https://github.com/Merith-TK/cc-restitched) of a [fork](https://github.com/Zundrel/cc-tweaked-fabric) of a [fork](https://github.com/ArchivedProjects/cc-tweaked-fabric)  of a [fork/port](https://github.com/mystiacraft/cc-tweaked-fabric) of an [update/port/fork](https://github.com/SquidDev-CC/CC-Tweaked) of [ComputerCraft](https://github.com/dan200/ComputerCraft), adding programmable computers,
+turtles and more to Minecraft.
 
-PRs welcome
+## What?
+ComputerCraft is the first mod that I have ever used and also one of my favorite mods.
+The only problem I have with is... the old textures so I manually am fixing and tweaking them along with some other things.
+
+## Contributing
+Any contribution is welcome, be that using the mod, reporting bugs or contributing code. In order to start helping
+develop CC:T, you'll need to follow these steps:
+-**Fork the repository:** Make a github account press the fork button.
+
+-**Edit the code** Edit the code and make your changes.
+
+-**Turn on github actions** Press the 'Enable Workflows' button or set up a new gradle workflow and copy-paste [this](https://github.com/3prm3/cc-retweaked/blob/v1.94.2/.github/workflows/gradle.yml) into your worklow's yml, dowload the artifacts and put in your mods folder and check for bugs.
+
+-**Make a pull request** press the 'New Pull Request' button and set the repository on the left to 3prm3/cc-retweaked and set the repository on the right to your repository.
+
+## Bleeding Edge Builds
+Bleeding edge builds can be found [here](https://github.com/3prm3/cc-retweaked/actions) at github actions to simplify things 
+
+## Community
+If you need help getting started with CC: Tweaked, want to show off your latest project, or just want to chat about
+ComputerCraft, here is the [forum](https://forums.computercraft.cc/) 
 
 ## Known Issues
 Main Known issue
@@ -15,3 +36,7 @@ Main Known issue
 * Please let me know of other mods that work with this one
 	* Better End
 	* Better Nether
+
+## [Building from sources](https://github.com/CaffeineMC/sodium-fabric#building-from-sources)
+Hover over 'Building from sources'
+
