@@ -25,7 +25,7 @@ Any contribution is welcome, be that using the mod, reporting bugs or contributi
 	> \`\`\`
 2) Follow the fabirc programming guidelines as close as possible. This means you have to use `loom` mappings, 
 3) You cannot intentionally implement bugs and security vulnerabilities
-4) Unless the commit is a "patchwork" compliant commit, (IE: taken from CC:T), the lua code is off limits,s
+4) Unless the commit is a "patchwork" compliant commit, (IE: taken from CC:T), the lua code is off limits
 ## Bleeding Edge Builds
 Bleeding edge builds can be found [here](https://github.com/Merith-TK/cc-restitched/actions) at github actions to simplify things 
 
