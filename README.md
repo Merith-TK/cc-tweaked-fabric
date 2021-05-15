@@ -25,13 +25,13 @@ Releases can be found [here on GitHub](https://github.com/Merith-TK/cc-restitche
 Bleeding edge builds can be found [here](https://github.com/Merith-TK/cc-restitched/actions) at github actions to simplify things 
 
 ## Community
-If you need help getting started with CC: Tweaked, want to show off your latest project, or just want to chat about
+If you need help getting started with CC: Restitched, want to show off your latest project, or just want to chat about
 ComputerCraft, here is the [forum](https://forums.computercraft.cc/) 
 
 ## Known Issues
 Main Known issue
-* Mods that add blocks that can be used as peripherals for CC:T On forge, dont work with CC:R.
-	* This is because of the differences between forge and fabric, and that mod devs, to my knowledge have not agreed upon a standard method in which to implement cross compatibility between mods,
+* Mods that add blocks that can be used as peripherals for CC:T On forge, don't work with CC:R.
+	* This is because of the differences between forge and fabric, and that mod devs, to my knowledge have not agreed upon a standard method in which to implement cross compatibility between modloaders,
 * Storage Peripherals throw a java "StackOverflowError" when using `pushItems()`, 
     * Work around, you are probably using `pushItems(chest, 1)` or simular. please use `pushItems(chest, 1, nil, 1)`. 
 
