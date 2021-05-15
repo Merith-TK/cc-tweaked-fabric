@@ -37,8 +37,8 @@ Main Known issue
 
 ## Known Working mods that add Peripherals
 * Please let me know of other mods that work with this one
-	* Better End
-	* Better Nether
+	* Better End = Chests are added
+	* Better Nether = Chests are added too
 
 ## [Building from sources](https://github.com/CaffeineMC/sodium-fabric#building-from-sources)
 Hover over 'Building from sources'
