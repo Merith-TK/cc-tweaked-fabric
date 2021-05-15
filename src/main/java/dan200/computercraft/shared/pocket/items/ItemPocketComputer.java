@@ -1,6 +1,6 @@
 /*
  * This file is part of ComputerCraft - http://www.computercraft.info
- * Copyright Daniel Ratcliffe, 2011-2020. Do not distribute without permission.
+ * Copyright Daniel Ratcliffe, 2011-2021. Do not distribute without permission.
  * Send enquiries to dratcliffe@gmail.com
  */
 
@@ -66,6 +66,9 @@ public class ItemPocketComputer extends Item implements IComputerItem, IMedia, I
     }
 
     public static ServerComputer getServerComputer(@Nonnull ItemStack stack) {
+        int session = getSessionID( stack );
+        if( session != ComputerCraft.serverComputerRegistry.getSessionID() ) return null;
+
         int instanceID = getInstanceID(stack);
         return instanceID >= 0 ? ComputerCraft.serverComputerRegistry.get(instanceID) : null;
     }

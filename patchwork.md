@@ -343,7 +343,6 @@ Cleanup examples for the various modules
 ```
 
 Ignored Documentation Changes, these are locate
-```
 
 ```
 9a749642d294506095e697a3a4345dfe260bd68c
@@ -362,3 +361,179 @@ Remove extra space (#586)
 
 Fixed length check on function name in `expect` (#589)
 ```
+
+```
+04f9644ae75dafc72da4c4790f334d2e90b03e6f
+
+Allow strings or numbers in textutils.*tabulate
+
+A little dubious, but apparently CC used to support it. This means we're
+consistent with methods like io.write or string.len which accept strings
+or numbers.
+
+Fixes #591
+```
+
+```
+d4199064ae5ae8023c589f80f12d94e1c6bbc2b5
+
+Make fs.combine accept multiple arguments
+
+Means we can now do fs.combine("a", "b", "c"). Of course, one may just
+write "a/b/c" in this case, but it's definitely useful elsewhere.
+
+This is /technically/ a breaking change as fs.combine(a, b:gsub(...))
+will no longer function (as gsub returns multiple arguments). However,
+I've done a quick search through GH and my Pastebin archives and can't
+find any programs which would break. Fingers crossed.
+```
+
+```
+24af36743d08fcdb58439c52bf587b33ed828263
+
+Try to handle a turtle being broken while ticked
+
+Hopefully fixes #585. Hopefully.
+```
+
+```
+511eea39a11956c82e2c11a47b2e7cad27f9887e
+
+Remove <!-- -->s in usages 
+```
+
+```
+826797cbd579e867f0f35f0be44b6a28c8c094a9
+
+Added documentation for global functions (#592)
+```
+Didn't port the docs over.
+
+```
+d83a68f3ff6e3833278a38798d06215293656e85
+
+Allow $private HTTP rule to block any private IP
+```
+The config still uses a `blacklist` and `whitelist` array.
+
+```
+24d3777722812f975d2bc4594437fbbb0431d910
+
+Added improved help viewer (#595)
+```
+Didn't port the lua tests over.
+
+```
+737b3cb57696fb5517252e7db38bc88ce960b4d8
+
+Don't use capabilities for generic peripherals 
+```
+Not ported, related to forges capability system which is not used in the port.
+
+```
+ea3a16036794357c3a44edffc90fdb652e03881e
+
+Remove a couple of todos
+```
+
+```
+bb8f4c624bf87169b73fb631d8250cfc38181e15
+
+Some sanity checks for get{Direction,Orientation}
+```
+Use `getCachedState` instead of forge's `getBlockState` and `contains` instead of `has`.
+
+```
+05c3c8ad3269c9025757f9261e7f609889fb6bdc
+
+Generate docs for generic peripherals
+```
+Skipped everything except some removed whitespace.
+
+```
+85cf2d5ff1b63010de4661301801aa504e5b9015
+
+Docs for energy and inventory methods
+```
+and
+```
+5865e9c41a0140b9f1acdd2fb095353c467fbb45
+
+Not sure what irritates me more
+```
+both skipped because the changes where already ported.
+
+```
+4ae370b9dbaf1de0ed32a5f32340b1448136c9cc
+
+Merge pull request #606 from TheWireLord/numpadenter-support
+```
+Just lua changes.
+
+```
+f5eb6ce03e0d9bbbf77130452afd4b49e758f7bd
+
+Fix copy-paste error in inventory docs
+```
+Skipped because it was already ported.
+
+```
+663859d2e5a97edefebf9ac36206903d7dd33a3e
+Fix double URL decode
+```
+
+```
+abf425dfb5553483cdc51c50a6b7d8b5e44814f4
+
+Fix overflow in os.epoch
+```
+
+```
+e3a672099c1b5d2c06f9fe4d8ccd024fef0873a2
+
+Fix JEI integration with turtle/pocket upgrades
+```
+Skipped because there seems to be no REI integration.
+
+```
+2f0cae0bc1b038ac092bafa7f65a317537203cd8
+
+Make upgrade recipe requirements a little more lax
+```
+[TODO] [JUMT-01] Crafting is still messed up, but this port didn't change the behavior.
+[TODO] [JUMT-02] Tag comparison code doesn't need to be that verbose, a simple `isEqual` check would suffice.
+
+```
+7f9a707f75636d5816f752dc93d7b6b998c61a03
+
+Bump version to 1.95.0
+```
+Changed the name from CC: Tweaked to CC: Restitched in the changelog and whatsnew files. New version is 1.95.0-beta.
+
+```
+4af5bcc0b0ff464e7e7428c389d47140580ea7a7
+
+Fix serveral 1.15 -> 1.16 issues
+```
+Skipped, changes where already made.
+
+```
+b8d5a89446ac02fc5b38cc5c0b4805de9d11a7d5
+
+Add explicit @module annotation
+```
+Tiny lua change.
+
+```
+8b17ec76a8e94251803e6f4ba4e65970c6a70b7f
+
+Fixed missing argument names in file handle docs (#632)
+```
+A java doc change.
+
+```
+e4b0a5b3ce035eb23feb4191432fc49af5772c5b
+
+2020 -> 2021
+```
+A huge amount of changes.

@@ -1,6 +1,6 @@
 /*
  * This file is part of ComputerCraft - http://www.computercraft.info
- * Copyright Daniel Ratcliffe, 2011-2020. Do not distribute without permission.
+ * Copyright Daniel Ratcliffe, 2011-2021. Do not distribute without permission.
  * Send enquiries to dratcliffe@gmail.com
  */
 
@@ -9,10 +9,8 @@ package dan200.computercraft.core.apis.http.request;
 import static dan200.computercraft.core.apis.http.request.HttpRequest.getHeaderSize;
 
 import java.io.Closeable;
-import java.io.UnsupportedEncodingException;
 import java.net.URI;
 import java.net.URISyntaxException;
-import java.net.URLDecoder;
 import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
 import java.util.HashMap;
@@ -228,8 +226,8 @@ public final class HttpRequestHandler extends SimpleChannelInboundHandler<HttpOb
         }
 
         try {
-            return this.uri.resolve(new URI(URLDecoder.decode(location, "UTF-8")));
-        } catch (UnsupportedEncodingException | IllegalArgumentException | URISyntaxException e) {
+            return this.uri.resolve(new URI( location ));
+        } catch( IllegalArgumentException | URISyntaxException e ) {
             return null;
         }
     }

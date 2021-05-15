@@ -1,6 +1,6 @@
 /*
  * This file is part of ComputerCraft - http://www.computercraft.info
- * Copyright Daniel Ratcliffe, 2011-2020. Do not distribute without permission.
+ * Copyright Daniel Ratcliffe, 2011-2021. Do not distribute without permission.
  * Send enquiries to dratcliffe@gmail.com
  */
 
@@ -19,7 +19,6 @@ import javax.annotation.Nullable;
 import dan200.computercraft.ComputerCraft;
 import dan200.computercraft.api.turtle.ITurtleUpgrade;
 import dan200.computercraft.shared.computer.core.ComputerFamily;
-import dan200.computercraft.shared.util.InventoryUtil;
 
 import net.minecraft.item.ItemStack;
 
@@ -96,7 +95,8 @@ public final class TurtleUpgrades {
             }
 
             ItemStack craftingStack = wrapper.upgrade.getCraftingItem();
-            if (!craftingStack.isEmpty() && InventoryUtil.areItemsSimilar(stack, craftingStack)) {
+            if( !craftingStack.isEmpty() && craftingStack.getItem() == stack.getItem() && wrapper.upgrade.isItemSuitable( stack ) )
+            {
                 return wrapper.upgrade;
             }
         }

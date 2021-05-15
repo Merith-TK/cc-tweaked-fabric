@@ -1,6 +1,6 @@
 /*
  * This file is part of ComputerCraft - http://www.computercraft.info
- * Copyright Daniel Ratcliffe, 2011-2020. Do not distribute without permission.
+ * Copyright Daniel Ratcliffe, 2011-2021. Do not distribute without permission.
  * Send enquiries to dratcliffe@gmail.com
  */
 
@@ -353,7 +353,7 @@ public class OSAPI implements ILuaAPI {
         case "ingame":
             // Get in-game epoch
             synchronized (this.m_alarms) {
-                return this.m_day * 86400000 + (int) (this.m_time * 3600000.0f);
+                return this.m_day * 86400000L + (long) (this.m_time * 3600000.0);
             }
         default:
             throw new LuaException("Unsupported operation");

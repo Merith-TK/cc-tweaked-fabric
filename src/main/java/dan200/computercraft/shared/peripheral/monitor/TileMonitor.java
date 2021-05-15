@@ -1,6 +1,6 @@
 /*
  * This file is part of ComputerCraft - http://www.computercraft.info
- * Copyright Daniel Ratcliffe, 2011-2020. Do not distribute without permission.
+ * Copyright Daniel Ratcliffe, 2011-2021. Do not distribute without permission.
  * Send enquiries to dratcliffe@gmail.com
  */
 
@@ -218,7 +218,10 @@ public class TileMonitor extends TileGeneric implements IPeripheralTile {
 
     // region Sizing and placement stuff
     public Direction getDirection() {
-        return this.getCachedState().get(BlockMonitor.FACING);
+        // Ensure we're actually a monitor block. This _should_ always be the case, but sometimes there's
+        // fun problems with the block being missing on the client.
+        BlockState state = getCachedState();
+        return state.contains( BlockMonitor.FACING ) ? state.get( BlockMonitor.FACING ) : Direction.NORTH;
     }
 
     public Direction getOrientation() {

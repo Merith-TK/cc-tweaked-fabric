@@ -1,9 +1,8 @@
 /*
  * This file is part of ComputerCraft - http://www.computercraft.info
- * Copyright Daniel Ratcliffe, 2011-2020. Do not distribute without permission.
+ * Copyright Daniel Ratcliffe, 2011-2021. Do not distribute without permission.
  * Send enquiries to dratcliffe@gmail.com
  */
-
 package dan200.computercraft.client.render;
 
 import java.io.InputStream;
@@ -49,7 +48,6 @@ class MonitorTextureBufferShader {
         RenderSystem.glUniform1i(uniformWidth, width);
         RenderSystem.glUniform1i(uniformHeight, height);
 
-        // TODO: Cache this? Maybe??
         PALETTE_BUFFER.rewind();
         for (int i = 0; i < 16; i++) {
             double[] colour = palette.getColour(i);

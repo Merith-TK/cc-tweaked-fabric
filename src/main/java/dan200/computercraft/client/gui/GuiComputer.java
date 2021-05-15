@@ -1,6 +1,6 @@
 /*
  * This file is part of ComputerCraft - http://www.computercraft.info
- * Copyright Daniel Ratcliffe, 2011-2020. Do not distribute without permission.
+ * Copyright Daniel Ratcliffe, 2011-2021. Do not distribute without permission.
  * Send enquiries to dratcliffe@gmail.com
  */
 
@@ -107,6 +107,11 @@ public final class GuiComputer<T extends ContainerComputerBase> extends HandledS
     public boolean mouseDragged(double x, double y, int button, double deltaX, double deltaY) {
         return (this.getFocused() != null && this.getFocused().mouseDragged(x, y, button, deltaX, deltaY)) || super.mouseDragged(x, y, button, deltaX, deltaY);
     }
+
+	@Override
+	public boolean mouseReleased(double mouseX, double mouseY, int button) {
+		return (this.getFocused() != null && this.getFocused().mouseReleased(mouseX, mouseY, button)) || super.mouseReleased(x, y, button);
+	}
 
     @Override
     public boolean keyPressed(int key, int scancode, int modifiers) {

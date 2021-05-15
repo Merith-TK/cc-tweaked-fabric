@@ -1,6 +1,6 @@
 /*
  * This file is part of ComputerCraft - http://www.computercraft.info
- * Copyright Daniel Ratcliffe, 2011-2020. Do not distribute without permission.
+ * Copyright Daniel Ratcliffe, 2011-2021. Do not distribute without permission.
  * Send enquiries to dratcliffe@gmail.com
  */
 
@@ -163,6 +163,10 @@ public class TurtleBrain implements ITurtleAccess {
         if (!world.isClient) {
             // Advance movement
             this.updateCommands();
+
+            // The block may have been broken while the command was executing (for instance, if a block explodes
+            // when being mined). If so, abort.
+            if( m_owner.isRemoved() ) return;
         }
 
         // Advance animation

@@ -1,6 +1,6 @@
 /*
  * This file is part of ComputerCraft - http://www.computercraft.info
- * Copyright Daniel Ratcliffe, 2011-2020. Do not distribute without permission.
+ * Copyright Daniel Ratcliffe, 2011-2021. Do not distribute without permission.
  * Send enquiries to dratcliffe@gmail.com
  */
 
@@ -59,7 +59,8 @@ public final class PocketUpgrades {
 
         for (IPocketUpgrade upgrade : upgrades.values()) {
             ItemStack craftingStack = upgrade.getCraftingItem();
-            if (!craftingStack.isEmpty() && InventoryUtil.areItemsSimilar(stack, craftingStack)) {
+            if( !craftingStack.isEmpty() && craftingStack.getItem() == stack.getItem() && upgrade.isItemSuitable( stack ) )
+            {
                 return upgrade;
             }
         }
