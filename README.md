@@ -48,6 +48,7 @@ Main Known issue
 
 ## Known Working mods that add Peripherals
 * Please let me know of other mods that work with this one
-	* Better End  adds chests
-
-	* Better Nether also adds chests
+	* Better End 
+     * adds chests that are compatible with ComputerCraft
+	* Better Nether
+	 * adds chests that are compatible with ComputerCraft
