@@ -1,5 +1,5 @@
 plugins {
-    id 'fabric-loom' version '0.5-SNAPSHOT'
+    id 'fabric-loom' version '0.6-SNAPSHOT'
     id 'maven-publish'
 }
 
@@ -13,6 +13,7 @@ archivesBaseName = "cc-restiched"
 
 repositories {
     mavenCentral()
+    jcenter()
     maven {
         name "SquidDev"
         url "https://squiddev.cc/maven"
@@ -55,8 +56,8 @@ dependencies {
     testImplementation 'org.junit.jupiter:junit-jupiter-params:5.7.0'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
 
-    modRuntime "me.shedaniel:RoughlyEnoughItems-api:5.2.10"
-    modRuntime "me.shedaniel:RoughlyEnoughItems:5.2.10"
+    modRuntime "me.shedaniel:RoughlyEnoughItems-api:5.8.9"
+    modRuntime "me.shedaniel:RoughlyEnoughItems:5.8.9"
 }
 
 sourceSets {
