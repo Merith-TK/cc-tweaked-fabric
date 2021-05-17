@@ -17,7 +17,7 @@ This mod includes textures that are more in-line with the style of Mojang's new 
 We also have a second resourcepack made by [3prm3](https://github.com/3prm3), it features a complete overhaul and can be enabled by enabling the `overhaul` resource pack, go check out his resource pack over here!
 
 ## Relation to Stitching?
-The "stitched" is becuase of the name of the modloader this is on  the ["Fabric"](https://fabricmc.net/) modloader 
+The "stitched" is becuase of the name of the modloader ;the ["Fabric"](https://fabricmc.net/) modloader 
 ## Contributing
 Any contribution is welcome, be that using the mod, reporting bugs or contributing code. In order to start helping develop CC:R there are a few rules
 1) Any updates that port commits from CC:T, ***MUST*** follow the format defined in [patchwork.md](patchwork.md) otherwise they will not be accepted,
