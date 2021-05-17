@@ -7,7 +7,8 @@
 
 [![Current build status](https://github.com/Merith-TK/cc-restitched/workflows/Build/badge.svg)](https://github.com/Merith-TK/cc-restitched/actions "Current build status") [![Download CC: Restitched  on CurseForge](http://cf.way2muchnoise.eu/title/cc-restitched.svg)](https://www.curseforge.com/minecraft/mc-mods/cc-restitched-updated "Download CC: Restitched on CurseForge")
 
-This is an fork of [Zundrel/cc-tweaked-fabric](https://github.com/Zundrel/cc-tweaked-fabric) who's goal was to port [SquidDev-CC/CC-Tweaked](https://github.com/SquidDev-CC/CC-Tweaked) to fabric. I picked up maintaining the mod because the team working on Zundrel's fork, admitted they had gotten lethargic so I picked it up to make it up to snuff with CC:T
+## What?
+This is an fork of [Zundrel/cc-tweaked-fabric](https://github.com/Zundrel/cc-tweaked-fabric) who's goal was to port [SquidDev-CC/CC-Tweaked](https://github.com/SquidDev-CC/CC-Tweaked) to the [Fabric](https://fabricmc.net/) modloader. I picked up maintaining the mod because the team working on Zundrel's fork, admitted they had gotten lethargic so I picked it up to make it up to snuff with CC:T
 
 ## Resource Packs
 This mod includes textures that are more in-line with the style of Mojang's new texture-artist, Jappa. If you prefer the original textures, enable the "Classic" resource pack provided by the mod.
@@ -21,7 +22,7 @@ Any contribution is welcome, be that using the mod, reporting bugs or contributi
 1) Any updates that port commits from CC:T, ***MUST*** follow the format defined in [patchwork.md](patchwork.md) otherwise they will not be accepted,
 	* Commit Message must be the same as it is in CC:T,
 	* patchwork.md must be updated in the following format
-	> Comments, optional but useful if you had to do something 	differently than in CC:T (outside of Fabric/forge differences
+	> Comments, optional but useful if you had to do something 	differently than in CC:T outside of [Fabric](https://fabricmc.net/)/[Forge](https://mcforge.readthedocs.io/en/1.16.x/) differences
 	>
 	> \`\`\`
 	> 
@@ -32,7 +33,7 @@ Any contribution is welcome, be that using the mod, reporting bugs or contributi
 	> commit desc
 	>
 	> \`\`\`
-2) Follow the Fabric programming guidelines as close as possible. This means you have to use `loom` mappings, 
+2) Follow the [Fabric](https://fabricmc.net/) programming guidelines as close as possible. This means you have to use ['loom'](https://fabricmc.net/wiki/tutorial:mappings) mappings, 
 3) You cannot intentionally implement bugs and security vulnerabilities
 4) Unless the commit is a ["patchwork"](https://github.com/Merith-TK/cc-restitched/blob/fabric/patchwork.md) compliant commit, (IE: taken from CC:T), the lua code is off limits
 ## Bleeding Edge Builds
@@ -43,7 +44,7 @@ If you need help getting started with CC: Tweaked, want to show off your latest 
 
 ## Known Issues
 Main Known issue
-* Mods that add blocks that can be used as peripherals for CC:T On forge, dont work with CC:R.
+* Mods that add blocks that can be used as peripherals for CC:T On forge, don't work with CC:R.
 	* This is because of the differences between forge and fabric, and that mod devs, to my knowledge have not agreed upon a standard method in which to implement cross compatibility between mods,
 * [Fixed (d10f297c): please report if bug persists]</br> ~~Storage Peripherals throw a java "StackOverflowError" when using `pushItems()`,~~ 
     * ~~Work around, you are probably using `pushItems(chest, 1)` or similar. please use `pushItems(chest, 1, nil, 1)`.~~ 
