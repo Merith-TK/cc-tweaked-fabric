@@ -9,6 +9,8 @@ jobs:
 
         steps:
             - uses: actions/checkout@v2
+            - name: Checkout submodules
+              run: git submodule update --init --recursive
 
             - name: Set up Java 8
               uses: actions/setup-java@v1
@@ -31,17 +33,3 @@ jobs:
               with:
                   name: cc-restiched
                   path: build/libs
-
-            - name: Upload Coverage
-              run: bash <(curl -s https://codecov.io/bash)
-              continue-on-error: true
-
-            - name: Lint Lua code
-              run: |
-                  test -d bin || mkdir bin
-                  test -f bin/illuaminate || wget -q -Obin/illuaminate https://squiddev.cc/illuaminate/linux-x86-64/illuaminate
-                  chmod +x bin/illuaminate
-                  bin/illuaminate lint
-
-            - name: Check whitespace
-              run: python3 tools/check-lines.py

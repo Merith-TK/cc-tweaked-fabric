@@ -1,3 +1,6 @@
+[submodule "src/main/resources/resourcepacks/teardown"]
+	path = src/main/resources/resourcepacks/teardown
+	url = https://github.com/3prm3/cc-pack
 [submodule "src/main/resources/resourcepacks/overhaul"]
 	path = src/main/resources/resourcepacks/overhaul
-	url = https://github.com/3prm3/cc-pack
+	url = https://github.com/CC-Fabric/cc-pack

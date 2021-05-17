@@ -136,6 +136,7 @@ public final class ComputerCraft implements ModInitializer {
         FabricLoader.getInstance().getModContainer(MOD_ID).ifPresent(modContainer -> {
             ResourceManagerHelper.registerBuiltinResourcePack(new Identifier(MOD_ID, "classic"), modContainer, ResourcePackActivationType.NORMAL);
 			ResourceManagerHelper.registerBuiltinResourcePack(new Identifier(MOD_ID, "overhaul"), modContainer, ResourcePackActivationType.NORMAL);
+            ResourceManagerHelper.registerBuiltinResourcePack(new Identifier(MOD_ID, "teardown"), modContainer, ResourcePackActivationType.NORMAL);   
         });
     }
 
