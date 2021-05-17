@@ -34,7 +34,7 @@ Any contribution is welcome, be that using the mod, reporting bugs or contributi
 	> commit desc
 	>
 	> \`\`\`
-2) Follow the [Fabric](https://fabricmc.net/) programming guidelines as close as possible. This means you have to use ['loom'](https://fabricmc.net/wiki/tutorial:mappings) mappings, 
+2) Follow the [Fabric](https://fabricmc.net/) programming guidelines as close as possible. This means you have to use [`loom`](https://fabricmc.net/wiki/tutorial:mappings) mappings, 
 3) You cannot intentionally implement bugs and security vulnerabilities
 4) Unless the commit is a ["patchwork"](https://github.com/Merith-TK/cc-restitched/blob/fabric/patchwork.md) compliant commit, (IE: taken from CC:T), the lua code is off limits
 ## Bleeding Edge Builds
