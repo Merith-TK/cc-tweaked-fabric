@@ -1,7 +1,7 @@
 # CC:Restitched Patchwork
 # This is a W.I.P Port
 
-<img src="logo(3).png" alt="CC: Restitched" width="100%"/>
+<img src="logo (3).png" alt="CC: Restitched" width="100%"/>
 
 *it works and runs-ish*
 
