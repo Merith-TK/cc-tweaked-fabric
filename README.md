@@ -1,7 +1,8 @@
 # CC:Restitched Patchwork
-# This is a Work In Progress Port
-*it runs and works-ish*
+# This is a W.I.P Port
+
 <img src="logo.png" alt="CC: Restitched" width="100%"/>
+*it works and runs-ish*
 
 [![Current build status](https://github.com/Merith-TK/cc-restitched/workflows/Build/badge.svg)](https://github.com/Merith-TK/cc-restitched/actions "Current build status") [![Download CC: Restitched  on CurseForge](http://cf.way2muchnoise.eu/title/cc-restitched.svg)](https://www.curseforge.com/minecraft/mc-mods/cc-restitched-updated "Download CC: Restitched on CurseForge")
 
