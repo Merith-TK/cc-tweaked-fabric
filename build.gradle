@@ -5,8 +5,11 @@ plugins {
     id "com.github.hierynomus.license" version "0.15.0"
 }
 
-sourceCompatibility = JavaVersion.VERSION_1_8
-targetCompatibility = JavaVersion.VERSION_1_8
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(8)
+    }
+}
 
 version = mod_version
 
